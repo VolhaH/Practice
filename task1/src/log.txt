@@ -1,0 +1,11 @@
+commit bc1b292a035554e66fb8cce7e8a73e14791c4057 (HEAD -> master)
+Author: Olga.Giris <olya.giris@mail.ru>
+Date:   Mon Feb 12 17:41:25 2018 +0300
+
+    add status.txt
+
+commit 6103af25040286f048f8ea4ba322a8d3e1476b85
+Author: Olga.Giris <olya.giris@mail.ru>
+Date:   Mon Feb 12 17:36:14 2018 +0300
+
+    add .gitignore
