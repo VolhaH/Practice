@@ -1,0 +1,155 @@
+.bodyclass {
+    background-color: #dacafb;
+    margin: 0;
+}
+
+h1 {
+    font-family: Lobster;
+    color: #2e1572;
+}
+
+.headerclass {
+    color: Black;
+    text-align: center;
+    font-family: Helvetica;
+    background-color: #ffffff;
+}
+
+#photo {
+    display: inline-block;
+    position: relative;
+    width: 10%;
+    vertical-align: super;
+}
+
+#portalname {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    width: 70%;
+}
+
+#addphoto {
+    display: inline-block;
+    position: relative;
+    text-align: right;
+    width: 6%;
+    vertical-align: middle;
+}
+
+#username {
+    display: inline-block;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    width: 7%
+}
+
+#exit {
+    display: inline-block;
+    position: relative;
+    text-align: left;
+    width: 5%;
+    margin: auto;
+    vertical-align: middle;
+}
+
+#logo {
+    width: 50%;
+    height: 50%;
+}
+
+.buttons {
+    width: 40%;
+    height: 40%;
+}
+
+.buttons:hover {
+    box-shadow: 0 0 5px #6a5acd
+}
+
+.menu{
+    background-color: #dacafb;
+    border: 0.1em solid #2e1572;
+    position: fixed;
+    padding:1em;
+    width: 20%;
+    margin-top: 0.5%;
+    margin-right: 5%;
+    margin-left: 75%;
+    margin-bottom: 2%;
+}
+
+.longbuttons {
+    display: inline-block;
+    width: 20%;
+    margin-left: 40%;
+}
+
+.longbuttons:hover {
+    box-shadow: 0 0 5px #6a5acd
+}
+.posts{
+    margin-left:0;
+    margin-right:30%;
+    background-color: #ffffff;
+}
+.post{
+    font-family: Helvetica;
+    margin-bottom: 0;
+}
+
+.lenta{
+    margin-top: 0;
+}
+
+.strauthor, .strdate, .strtext, .strhashtags {
+    margin-top: 0;
+    text-align: left;
+    font-family: Helvetica;
+}
+
+.strdate {
+    text-align: left;
+    display: inline-block;
+}
+
+.strauthor {
+    text-align: center;
+}
+
+.strtext {
+    font-size: larger;
+}
+
+.strhashtags {
+    color: #2e1572;
+}
+
+.like {
+    display: inline-block;
+    margin-right: 0;
+    margin-left: 83%;
+    text-align: right;
+    width: 6%;
+    vertical-align: top;
+}
+
+@font-face {
+    font-family: "Lobster";
+    src: url("Lobster.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+.footerclass {
+    color: #232323;
+    background-color: #dacafb;
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 0.8em;
+}
+
+#dacafb
+#444444
+#232323
