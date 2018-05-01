@@ -138,7 +138,7 @@ console.log("before: ");
 console.log(module.getPhotoPost(18));
 const permittedChanges = {
     description: 'This is the perfect way to spend your first afternoon in Iceland as you ease yourself into the sights and heritage here.',
-    photoLink: 'http://garypeppergirl.com/wp-content/uploads/2012/12/garypepper_iceland641-950x633.jpg'
+    photoLink: 'https://upload.wikimedia.org/wikipedia/commons/8/8e/Eyjafjallaj%C3%B6kull.jpeg'
 };
 console.log("after:");
 console.log(module.editPhotoPost(18, permittedChanges));

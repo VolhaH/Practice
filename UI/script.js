@@ -1,8 +1,9 @@
+"use strict";
 const module = (function() {
     const photoPosts = [
         {
             id: '1',
-            descriprion: 'Поздравляем с днём рождения звёздочку школы, Мороз Дашу!',
+            description: 'Поздравляем с днём рождения звёздочку школы, Мороз Дашу!',
             createdAt: new Date('2018-03-20T11:00:00'),
             author: 'elissa_bellydance',
             hashtags: ['happybirthday', 'сднемрождения'],
@@ -11,7 +12,7 @@ const module = (function() {
         },
         {
             id: '2',
-            descriprion: 'Поздравляем с днём рождения тренера школы, профессиональную исполнительницу восточного танца, Марину Дудинскую!',
+            description: 'Поздравляем с днём рождения тренера школы, профессиональную исполнительницу восточного танца, Марину Дудинскую!',
             createdAt: new Date('2018-03-20T10:00:00'),
             author: 'elissa_bellydance',
             hashtags: ['happybirthday', 'сднемрождения'],
@@ -20,7 +21,7 @@ const module = (function() {
         },
         {
             id: '3',
-            descriprion: 'Белорусские паралимпийцы заняли 8 место в общем медальном зачёте.',
+            description: 'Белорусские паралимпийцы заняли 8 место в общем медальном зачёте.',
             createdAt: new Date('2018-03-18T18:02:05'),
             author: 'sports.by',
             hashtags: ['winners', 'win', 'paralympicgames'],
@@ -29,7 +30,7 @@ const module = (function() {
         },
         {
             id: '4',
-            descriprion: 'Happy birthday to my and partner in crime and father of our beautiful daughters. Love you XOXO',
+            description: 'Happy birthday to my and partner in crime and father of our beautiful daughters. Love you XOXO',
             createdAt: new Date('2018-03-18T01:03:00'),
             author: 'beeprinsloolevine',
             hashtags: [],
@@ -38,7 +39,7 @@ const module = (function() {
         },
         {
             id: '5',
-            descriprion: 'Happy birthday, Adam Levine!',
+            description: 'Happy birthday, Adam Levine!',
             createdAt: new Date('2018-03-18T00:00:00'),
             author: 'maroon5',
             hashtags: ['happybirthday', 'adamlevine', 'maroon5'],
@@ -47,7 +48,7 @@ const module = (function() {
         },
         {
             id: '6',
-            descriprion: 'We\'ve all got both light and dark inside us. What matters is the part we choose to act on. That\'s who we really are.',
+            description: 'We\'ve all got both light and dark inside us. What matters is the part we choose to act on. That\'s who we really are.',
             createdAt: new Date('2018-02-26T11:42:43'),
             author: 'Olga.Giris',
             hashtags: ['harrypotter', 'potterhead'],
@@ -56,7 +57,7 @@ const module = (function() {
         },
         {
             id: '7',
-            descriprion: 'Женская сборная Беларуси выиграла эстафету в рамках соревнований по биатлону на Олимпийских играх в Пхёнчхане!!!',
+            description: 'Женская сборная Беларуси выиграла эстафету в рамках соревнований по биатлону на Олимпийских играх в Пхёнчхане!!!',
             createdAt: new Date('2018-02-23T23:00:00'),
             author: 'sports.by',
             hashtags: ['win', 'winner', 'olymoicgames'],
@@ -65,7 +66,7 @@ const module = (function() {
         },
         {
             id: '8',
-            descriprion: 'New apocalypse',
+            description: 'New apocalypse',
             createdAt: new Date('2017-12-27T20:25:25'),
             author: 'exiiisted',
             hashtags: ['makeup', 'makeupart', 'fire'],
@@ -74,7 +75,7 @@ const module = (function() {
         },
         {
             id: '9',
-            descriprion: 'It was raining the day we went which didn’t damper our spirits, it just made the island feel more mystic and alluring with low hanging clouds and a slight mist covering its hills.',
+            description: 'It was raining the day we went which didn’t damper our spirits, it just made the island feel more mystic and alluring with low hanging clouds and a slight mist covering its hills.',
             createdAt: new Date('2017-05-29T08:07:08'),
             author: 'garypeppergirl',
             hashtags: ['NEWZEALAND'],
@@ -83,7 +84,7 @@ const module = (function() {
         },
         {
             id: '10',
-            descriprion: 'Take your broken heart, make it into art',
+            description: 'Take your broken heart, make it into art',
             createdAt: new Date('2017-01-10T10:09:48'),
             author: 'garypeppergirl',
             hashtags: ['SANTORINI'],
@@ -92,7 +93,7 @@ const module = (function() {
         },
         {
             id: '11',
-            descriprion: 'Looking back, as much as I love the final edits, I truly love our film shots because I feel it captured the easy going, candid and fun moments we shared on set.',
+            description: 'Looking back, as much as I love the final edits, I truly love our film shots because I feel it captured the easy going, candid and fun moments we shared on set.',
             createdAt: new Date('2016-05-26T20:05:06'),
             author: 'thatgirlakulina',
             hashtags: ['SYDNEY'],
@@ -101,7 +102,7 @@ const module = (function() {
         },
         {
             id: '12',
-            descriprion: 'I found beauty hiding around every single corner and lived for those magical moments hiking along the Napali Coast or flying above it by helicopter.',
+            description: 'I found beauty hiding around every single corner and lived for those magical moments hiking along the Napali Coast or flying above it by helicopter.',
             createdAt: new Date('2015-06-25T09:00:00'),
             author: 's_baker',
             hashtags: ['KAUAI'],
@@ -110,7 +111,7 @@ const module = (function() {
         },
         {
             id: '13',
-            descriprion: 'Один из лучших дней в моей жизни.',
+            description: 'Один из лучших дней в моей жизни.',
             createdAt: new Date('2015-04-26T18:19:00'),
             author: 'nepravskayak_',
             hashtags: ['TOKYO'],
@@ -119,7 +120,7 @@ const module = (function() {
         },
         {
             id: '14',
-            descriprion: '\'You are never too young, too old, too poor, too uneducated or too busy to start living your dreams. A dream is a dream; it should not be contained by boundaries and cannot be defined by others\'.',
+            description: '\'You are never too young, too old, too poor, too uneducated or too busy to start living your dreams. A dream is a dream; it should not be contained by boundaries and cannot be defined by others\'.',
             createdAt: new Date('2014-10-22T18:19:38'),
             author: 'nepravskayak_',
             hashtags: ['NORWAY'],
@@ -128,7 +129,7 @@ const module = (function() {
         },
         {
             id: '15',
-            descriprion: 'It’s the simplest forms of beauty that really resonate with me, and in this case it was something as simple as a pocketful of shadows.',
+            description: 'It’s the simplest forms of beauty that really resonate with me, and in this case it was something as simple as a pocketful of shadows.',
             createdAt: new Date('2014-05-10T15:05:01'),
             author: 'marta1',
             hashtags: ['ZURICH'],
@@ -137,7 +138,7 @@ const module = (function() {
         },
         {
             id: '16',
-            descriprion: 'We flew into Zurich for just a few days with Calvin Klein to make a special announcement during Baselworld.',
+            description: 'We flew into Zurich for just a few days with Calvin Klein to make a special announcement during Baselworld.',
             createdAt: new Date('2014-05-09T19:05:11'),
             author: 't27melton',
             hashtags: ['ZURICH'],
@@ -146,7 +147,7 @@ const module = (function() {
         },
         {
             id: '17',
-            descriprion: 'A two piece suit has to be one of my favorite wardrobe staples.',
+            description: 'A two piece suit has to be one of my favorite wardrobe staples.',
             createdAt: new Date('2013-09-28T18:18:18'),
             author: 'thatgirlakulina',
             hashtags: ['LONDON'],
@@ -155,7 +156,7 @@ const module = (function() {
         },
         {
             id: '18',
-            descriprion: 'A world in its own that people often overlook but once you see its natural beauty you’ll wonder why you didn’t come here sooner.',
+            description: 'A world in its own that people often overlook but once you see its natural beauty you’ll wonder why you didn’t come here sooner.',
             createdAt: new Date('2012-12-11T23:00:00'),
             author: 'marta1',
             hashtags: ['ICELAND'],
@@ -164,7 +165,7 @@ const module = (function() {
         },
         {
             id: '19',
-            descriprion: 'Iceland is such a surreal place and every landscape we saw left me feeling incredibly inspired.',
+            description: 'Iceland is such a surreal place and every landscape we saw left me feeling incredibly inspired.',
             createdAt: new Date('2012-12-05T00:00:00'),
             author: 't27melton',
             hashtags: ['ICELAND'],
@@ -173,7 +174,7 @@ const module = (function() {
         },
         {
             id: '20',
-            descriprion: 'There really is too much to see in Iceland and despite its temperature I absolutely fell in love with its surreal landscape and natural wonders.',
+            description: 'There really is too much to see in Iceland and despite its temperature I absolutely fell in love with its surreal landscape and natural wonders.',
             createdAt: new Date('2012-11-30T10:20:10'),
             author: 's_baker',
             hashtags: ['ICELAND'],
@@ -185,54 +186,28 @@ const module = (function() {
     function getPhotoPosts(skip = 0, top = 10, filterConfig) {
         const array = [];
         photoPosts.sort(compareByDate);
+        // 1. Забиваю в массив, только если ни один фильтр не установлен.
         if (!filterConfig) {
             for (let i = skip; i < top + skip; i++)
                 array.push(photoPosts[i]);
             return array;
         }
-        if (filterConfig.author) {
+        // 1. Проверка сразу по всем фильтрам.
+        else {
             for (let i = 0; i < photoPosts.length; i++) {
-                if(photoPosts[i].author === filterConfig.author)
+                if (((filterConfig.author && photoPosts[i].author === filterConfig.author) || !filterConfig.author) &&
+                    ((filterConfig.fromDate && filterConfig.toDate && datesEqual(photoPosts[i], filterConfig)) || !filterConfig.fromDate || !filterConfig.toDate) &&
+                    ((filterConfig.hashtags && isContainHashTag(photoPosts[i], filterConfig)) || !filterConfig.hashtags))
                     array.push(photoPosts[i]);
             }
+            return array.slice(skip, skip + top);
         }
-        if (filterConfig.fromDate && filterConfig.toDate) {
-            for (let i = 0; i < photoPosts.length; i++) {
-                if (datesEqual(photoPosts[i], filterConfig))
-                    array.push(photoPosts[i]);
-            }
-        }
-        if (filterConfig.hashtags) {
-            for (let i = 0; i < photoPosts.length; i++) {
-                if (isContainHashTag(photoPosts[i], filterConfig))
-                    array.push(photoPosts[i]);
-            }
-        }
-
-        for (let i = 0; i < array.length; i++) {
-            if ((filterConfig.author && array[i].author !== filterConfig.author) ||
-                (filterConfig.createdAt && !datesEqual(array[i], filterConfig)) ||
-                (filterConfig.hashtags && !isContainHashTag(array[i], filterConfig))) {
-                array.splice(i, 1);
-                i--;
-            }
-        }
-        for(let i = 0; i < array.length; i++) {
-            for(let j = i; j < array.length; j++) {
-                if (i === j)
-                    continue;
-                if(array[i].id === array[j].id) {
-                    array.splice(j, 1);
-                    j--;
-                }
-            }
-        }
-        return array.slice(skip, skip + top);
     }
     
     function getPhotoPost(idParam) {
         for(let i = 0; i < photoPosts.length; i++){
-            if (!photoPosts[i].id.localeCompare(idParam))
+            // 3. Убрала localeCompare
+            if (photoPosts[i].id==idParam)
                 return photoPosts[i];
         }
         return false;
@@ -240,7 +215,8 @@ const module = (function() {
 
     function validatePhotoPost(photoPost) {
         for(let i = 0; i < photoPosts.length; i++) {
-            if (!photoPosts[i].id.localeCompare(photoPost.id))
+            // 3. Убрала localeCompare
+            if (photoPosts[i].id==photoPost.id)
                 return false;
         }
         if (!photoPost.description || !isString(photoPost.description) || photoPost.description.length > 200)
@@ -267,23 +243,13 @@ const module = (function() {
 
     function editPhotoPost(id, photoPost) {
         if (isIdExist(id) && !photoPost.id && !photoPost.createdAt && !photoPost.author) {
-            if(photoPost.description) {
-                if(photoPost.description.length < 200)
-                    getPhotoPost(id).description = photoPost.description;
-                else
-                    return false;
-            }
-            if (photoPost.photoLink){
-                if(!isString(photoPost.photoLink))
-                    return false;
+            // 4. Объединила if-условия
+            if (photoPost.description && photoPost.description.length < 200)
+                getPhotoPost(id).description = photoPost.description;
+            if (photoPost.photoLink && isString(photoPost.photoLink))
                 getPhotoPost(id).photoLink = photoPost.photoLink;
-            }
-            if (photoPost.hashTags) {
-                if (photoPost.hashtags.some(notString))
-                    return false;
+            if (photoPost.hashTags && isString(photoPost.hashtags))
                 getPhotoPost(id).hashtags = photoPost.hashtags;
-                return true;
-            }
             return true;
         }
         return false;
@@ -299,14 +265,14 @@ const module = (function() {
     }
 
     function isString(s) {
-        if (typeof s === "string")
-            return true;
-        return false;
+        // 5. Убрала return-ы
+        typeof s === "string"
     }
 
     function isIdExist(id){
         for(let i = 0; i < photoPosts.length; i++) {
-            if(!photoPosts[i].id.localeCompare(id))
+            // 3. Убрала localeCompare
+            if(photoPosts[i].id==id)
                 return true;
         }
         return false;
@@ -318,12 +284,11 @@ const module = (function() {
 
     function isContainHashTag(obj1, obj2) {
         let counter = 0;
-        outer: for(let i = 0; i < obj1.hashtags.length; i++) {
+        // 6. Убрала метку continue
+        for(let i = 0; i < obj1.hashtags.length; i++) {
             for (let j = 0; j < obj2.hashtags.length; j++) {
-                if (obj1.hashtags[i] === obj2.hashtags[j]) {
+                if (obj1.hashtags[i] === obj2.hashtags[j])
                     counter++;
-                    continue outer;
-                }
             }
         }
         if (counter === obj2.hashtags.length)
