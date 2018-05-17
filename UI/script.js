@@ -1,6 +1,6 @@
 "use strict";
 const module = (function() {
-    const photoPosts = [
+    let photoPosts = [
         {
             id: '1',
             description: 'Поздравляем с днём рождения звёздочку школы, Мороз Дашу!',
@@ -30,7 +30,7 @@ const module = (function() {
         },
         {
             id: '4',
-            description: 'Happy birthday to my and partner in crime and father of our beautiful daughters. Love you XOXO',
+            description: 'Happy birthday to my partner in crime and father of our beautiful daughters. Love you XOXO',
             createdAt: new Date('2018-03-18T01:03:00'),
             author: 'beeprinsloolevine',
             hashtags: [],
@@ -53,14 +53,14 @@ const module = (function() {
             author: 'Olga.Giris',
             hashtags: ['harrypotter', 'potterhead'],
             likes: [],
-            photoLink: 'http://region13.info/images/7956/harry-potter-quotes-for-19-years-later.jpg'
+            photoLink: 'IMG_9749.jpg'
         },
         {
             id: '7',
             description: 'Женская сборная Беларуси выиграла эстафету в рамках соревнований по биатлону на Олимпийских играх в Пхёнчхане!!!',
             createdAt: new Date('2018-02-23T23:00:00'),
             author: 'sports.by',
-            hashtags: ['win', 'winner', 'olymoicgames'],
+            hashtags: ['win', 'winner', 'olympicgames'],
             likes: ['sports.by', 'Olga.Giris', 'elissa_bellydance'],
             photoLink: 'https://img.championat.com/news/big/a/w/vy-uhu-eli-lukashenko-menja-slushaet-eto-i-moja-pobeda-tozhe_15193136781183477106.jpg'
         },
@@ -182,7 +182,7 @@ const module = (function() {
             photoLink: 'http://garypeppergirl.com/wp-content/uploads/2012/11/garypepper_iceland31-950x633.jpg'
         }
     ];
-    
+
     function getPhotoPosts(skip = 0, top = 10, filterConfig) {
         const array = [];
         photoPosts.sort(compareByDate);
@@ -219,19 +219,23 @@ const module = (function() {
             if (photoPosts[i].id==photoPost.id)
                 return false;
         }
-        if (!photoPost.description || !isString(photoPost.description) || photoPost.description.length > 200)
+        if (!photoPost.description || typeof photoPost.description !== "string" || photoPost.description.length > 200)
             return false;
         if (!photoPost.createdAt || !(photoPost.createdAt instanceof Date))
             return false;
-        if (!photoPost.author || !isString(photoPost.author))
+        if (!photoPost.author || typeof photoPost.author !== "string")
             return false;
-        if (photoPost.hashtags && !photoPost.hashtags.some(isString))
+        if (photoPost.hashtags && photoPost.hashtags.some(notString))
             return false;
-        if (photoPost.likes && !photoPost.likes.some(isString))
+        if (photoPost.likes && photoPost.likes.some(notString))
             return false;
-        if (!photoPost.photoLink || !isString(photoPost.photoLink))
+        if (!photoPost.photoLink || typeof photoPost.photoLink !== "string")
             return false;
         return true;
+    }
+
+    function notString(s) {
+        typeof s !== "string";
     }
 
     function addPhotoPost(photoPost) {
@@ -246,9 +250,9 @@ const module = (function() {
             // 4. Объединила if-условия
             if (photoPost.description && photoPost.description.length < 200)
                 getPhotoPost(id).description = photoPost.description;
-            if (photoPost.photoLink && isString(photoPost.photoLink))
+            if (photoPost.photoLink && typeof photoPost.photoLink === "string")
                 getPhotoPost(id).photoLink = photoPost.photoLink;
-            if (photoPost.hashTags && isString(photoPost.hashtags))
+            if (photoPost.hashTags && typeof photoPost.hashtags === "string")
                 getPhotoPost(id).hashtags = photoPost.hashtags;
             return true;
         }
@@ -262,11 +266,6 @@ const module = (function() {
             return true;
         }
         return false;
-    }
-
-    function isString(s) {
-        // 5. Убрала return-ы
-        typeof s === "string"
     }
 
     function isIdExist(id){
@@ -303,12 +302,20 @@ const module = (function() {
         return false;
     }
 
+    function getAuthors() {
+        let array = [];
+        for (let i = 0; i < photoPosts.length; i++)
+                array.push(photoPosts[i].author);
+            return Array.from(new Set(array));
+    }
+
     return {
         getPhotoPosts,
         getPhotoPost,
         validatePhotoPost,
         addPhotoPost,
         editPhotoPost,
-        removePhotoPost
+        removePhotoPost,
+        getAuthors
     }
 }) ();

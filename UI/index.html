@@ -8,186 +8,38 @@
     <title>Photo Explorer</title>
 </head>
 <body class="bodyclass">
-<header class="headerclass">
-    <div id="photo">
+<header id="header">
+    <div id="photologo">
         <img src="photo.jpg" id="logo" align="middle">
     </div>
     <div id="portalname">
         <h1>Photo Explorer</h1>
     </div>
-    <div id="addphoto">
-        <input type="image" src="icons8-camera-48.png" class="buttons"/>
-    </div>
-    <div id="username">
-        <h4>Olga.Giris</h4>
-    </div>
+    <!-- addphoto and username -->
     <div id="exit">
         <input type="image" src="icons8-export-24.png" class="buttons"/>
     </div>
 </header>
 <div class="menu">
-    <p><input type="checkbox"><input placeholder="Author name" size="35%"></p>
-    <p><input type="checkbox"><input type="text" name="date1" placeholder="01.01.2018" size="7%">-<input
-            type="text" placeholder="01.03.2018" size="7%"></p>
-    <p><input type="checkbox"><input type="text" placeholder="#hashtags" height="30%" size="35%"></p>
+    <form>
+        <p id="list">
+            <input type="checkbox">
+            <input list="authors" placeholder="author">
+            <datalist id="authors">
+                <!-- authors -->
+            </datalist>
+        </p>
+    </form>
+    <p><input type="checkbox"><input type="date" name="date1" placeholder="01.01.2018" size="7%">-<input
+            type="date" placeholder="01.03.2018" size="7%"></p>
+    <p><input type="checkbox"><input type="text" placeholder="#hashtags" height="30%" size="41%"></p>
     <button class="longbuttons">Find</button>
 </div>
-<div class="posts">
-    <div class="post">
-        <img src="IMG_9749.jpg" alt="post" class="photo" width="100%">
-    </div>
-    <div class="lenta">
-        <h4 class="strauthor">Olga.Giris</h4>
-        <p class="strtext">We've all got both light and dark inside us. What matters is the part we choose to act on.
-            That's who we really are.</p>
-        <p class="strhashtags">#hogwarts #potterhead #sunset</p>
-        <hr color="#dacafb">
-        <div class="strdate">26.02.18 11:43</div>
-        <div class="like">
-            <input type="image" src="icons8-heart-24.png" class="buttons"/>
-        </div>
-    </div>
-    <hr color="#dacafb">
-    <div class="post">
-        <img src="IMG_9749.jpg" alt="post" class="photo" width="100%">
-    </div>
-    <div class="lenta">
-        <h4 class="strauthor">Olga.Giris</h4>
-        <p class="strtext">We've all got both light and dark inside us. What matters is the part we choose to act on.
-            That's who we really are.</p>
-        <p class="strhashtags">#hogwarts #potterhead #sunset</p>
-        <hr color="#dacafb">
-        <div class="strdate">26.02.18 11:43</div>
-        <div class="like">
-            <input type="image" src="icons8-heart-24.png" class="buttons"/>
-        </div>
-    </div>
-    <hr color="#dacafb">
-    <div class="post">
-        <img src="IMG_9749.jpg" alt="post" class="photo" width="100%">
-    </div>
-    <div class="lenta">
-        <h4 class="strauthor">Olga.Giris</h4>
-        <p class="strtext">We've all got both light and dark inside us. What matters is the part we choose to act on.
-            That's who we really are.</p>
-        <p class="strhashtags">#hogwarts #potterhead #sunset</p>
-        <hr color="#dacafb">
-        <div class="strdate">26.02.18 11:43</div>
-        <div class="like">
-            <input type="image" src="icons8-heart-24.png" class="buttons"/>
-        </div>
-    </div>
-    <hr color="#dacafb">
-    <div class="post">
-        <img src="IMG_9749.jpg" alt="post" class="photo" width="100%">
-    </div>
-    <div class="lenta">
-        <h4 class="strauthor">Olga.Giris</h4>
-        <p class="strtext">We've all got both light and dark inside us. What matters is the part we choose to act on.
-            That's who we really are.</p>
-        <p class="strhashtags">#hogwarts #potterhead #sunset</p>
-        <hr color="#dacafb">
-        <div class="strdate">26.02.18 11:43</div>
-        <div class="like">
-            <input type="image" src="icons8-heart-24.png" class="buttons"/>
-        </div>
-    </div>
-    <hr color="#dacafb">
-    <div class="post">
-        <img src="IMG_9749.jpg" alt="post" class="photo" width="100%">
-    </div>
-    <div class="lenta">
-        <h4 class="strauthor">Olga.Giris</h4>
-        <p class="strtext">We've all got both light and dark inside us. What matters is the part we choose to act on.
-            That's who we really are.</p>
-        <p class="strhashtags">#hogwarts #potterhead #sunset</p>
-        <hr color="#dacafb">
-        <div class="strdate">26.02.18 11:43</div>
-        <div class="like">
-            <input type="image" src="icons8-heart-24.png" class="buttons"/>
-        </div>
-    </div>
-    <hr color="#dacafb">
-    <div class="post">
-        <img src="IMG_9749.jpg" alt="post" class="photo" width="100%">
-    </div>
-    <div class="lenta">
-        <h4 class="strauthor">Olga.Giris</h4>
-        <p class="strtext">We've all got both light and dark inside us. What matters is the part we choose to act on.
-            That's who we really are.</p>
-        <p class="strhashtags">#hogwarts #potterhead #sunset</p>
-        <hr color="#dacafb">
-        <div class="strdate">26.02.18 11:43</div>
-        <div class="like">
-            <input type="image" src="icons8-heart-24.png" class="buttons"/>
-        </div>
-    </div>
-    <hr color="#dacafb">
-    <div class="post">
-        <img src="IMG_9749.jpg" alt="post" class="photo" width="100%">
-    </div>
-    <div class="lenta">
-        <h4 class="strauthor">Olga.Giris</h4>
-        <p class="strtext">We've all got both light and dark inside us. What matters is the part we choose to act on.
-            That's who we really are.</p>
-        <p class="strhashtags">#hogwarts #potterhead #sunset</p>
-        <hr color="#dacafb">
-        <div class="strdate">26.02.18 11:43</div>
-        <div class="like">
-            <input type="image" src="icons8-heart-24.png" class="buttons"/>
-        </div>
-    </div>
-    <hr color="#dacafb">
-    <div class="post">
-        <img src="IMG_9749.jpg" alt="post" class="photo" width="100%">
-    </div>
-    <div class="lenta">
-        <h4 class="strauthor">Olga.Giris</h4>
-        <p class="strtext">We've all got both light and dark inside us. What matters is the part we choose to act on.
-            That's who we really are.</p>
-        <p class="strhashtags">#hogwarts #potterhead #sunset</p>
-        <hr color="#dacafb">
-        <div class="strdate">26.02.18 11:43</div>
-        <div class="like">
-            <input type="image" src="icons8-heart-24.png" class="buttons"/>
-        </div>
-    </div>
-    <hr color="#dacafb">
-    <div class="post">
-        <img src="IMG_9749.jpg" alt="post" class="photo" width="100%">
-    </div>
-    <div class="lenta">
-        <h4 class="strauthor">Olga.Giris</h4>
-        <p class="strtext">We've all got both light and dark inside us. What matters is the part we choose to act on.
-            That's who we really are.</p>
-        <p class="strhashtags">#hogwarts #potterhead #sunset</p>
-        <hr color="#dacafb">
-        <div class="strdate">26.02.18 11:43</div>
-        <div class="like">
-            <input type="image" src="icons8-heart-24.png" class="buttons"/>
-        </div>
-    </div>
-    <hr color="#dacafb">
-    <div class="post">
-        <img src="IMG_9749.jpg" alt="post" class="photo" width="100%">
-    </div>
-    <div class="lenta">
-        <h4 class="strauthor">Olga.Giris</h4>
-        <p class="strtext">We've all got both light and dark inside us. What matters is the part we choose to act on.
-            That's who we really are.</p>
-        <p class="strhashtags">#hogwarts #potterhead #sunset</p>
-        <hr color="#dacafb">
-        <div class="strdate">26.02.18 11:43</div>
-        <div class="like">
-            <input type="image" src="icons8-heart-24.png" class="buttons"/>
-        </div>
-    </div>
-    <hr color="#dacafb">
-    <div>
-        <p>
-            <button class="longbuttons">More photos</button>
-        </p>
-    </div>
+<div class="posts"></div>
+<div>
+    <p>
+        <button class="longbuttons">More photos</button>
+    </p>
 </div>
 <footer class="footerclass">
     <p>Photo Explorer</p>
@@ -195,7 +47,50 @@
     <p>olya.giris@mail.ru</p>
     <p>01.03.2018</p>
 </footer>
+
+<template id="postTemplate">
+    <div class="publication">
+        <div id="post">
+            <img src="" alt="post" id="photo">
+            <!-- edit -->
+            <input type="image" src="icons8-heart-24.png" class="like"/>
+        </div>
+        <div class="lenta">
+            <h4 id="strauthor"></h4>
+            <p id="strtext"></p>
+            <div id="tagsanddate">
+                <div id="strhashtags"></div>
+                <div id="strdate"></div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<template id="editButtonsTemplate">
+    <input type="image" src="icons8-trash-can-24.png" class="trash"/>
+    <input type="image" src="icons8-pencil-24.png" class="edit"/>
+</template>
+
+<template id="headerTemplate">
+    <div id="addphoto">
+        <input type="image" src="icons8-camera-48.png" class="buttons"/>
+    </div>
+    <div id="username">
+        <h4></h4>
+    </div>
+</template>
+
+<template id="authorSelectTemplate">
+    <div id="addphoto">
+        <input type="image" src="icons8-camera-48.png" class="buttons"/>
+    </div>
+    <div id="username">
+        <h4></h4>
+    </div>
+</template>
+
 <script src="script.js"></script>
-<script src="test.js"></script>
+<script src="DOM.js"></script>
+
 </body>
 </html>
