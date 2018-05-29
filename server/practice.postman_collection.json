@@ -1,0 +1,115 @@
+{
+	"info": {
+		"_postman_id": "90f05f9b-8f02-4c13-abe9-cff06a4dad02",
+		"name": "practice",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:3000/getPhotoPosts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "localhost:3000/getPhotoPosts",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"getPhotoPosts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/addPhotoPost",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "localhost:3000/addPhotoPost",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"addPhotoPost"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/removePhotoPost/11",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "localhost:3000/removePhotoPost/11",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"removePhotoPost",
+						"11"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/getPhotoPost/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "localhost:3000/getPhotoPost/1",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"getPhotoPost",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/editPhotoPost/2",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n            \"description\": \"Hello!\"\r\n        }"
+				},
+				"url": {
+					"raw": "localhost:3000/editPhotoPost/2",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"editPhotoPost",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
